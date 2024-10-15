@@ -1,0 +1,2035 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('solvealt.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    z-index: 1000;
+    
+}
+/* this is navigation tab title */
+.title h2 {
+    font-size: 80;
+    text-align: right; /* Center the text */
+    margin: -10px 250px;
+}
+
+.logo {
+    background: none; 
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: #000000 12px -24px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.logo:hover {
+    cursor:pointer; 
+}
+
+.logo span {
+    color: #f9004d;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: #000000 12px -24px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: color 0.4s;
+}
+
+#btn {
+    background-color: #f9004d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+#Home content {
+    line-height: 3;
+}
+
+#Home h1 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 25px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#Home h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#Home h4 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 40px;
+    font-weight: bold !important;
+    font-family: Arial, sans-serif;
+}
+#Home h4 span {
+    color: #f9004d;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+/* Newsletter */
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #eee;
+    outline: none;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px #f9004d, 0px 0px 15px #f9004d;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+.About .overlay span{
+    color: #f9004d;
+}
+.About {
+    position: relative;
+    background-color: #191919;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Change font as needed */
+}
+#About{
+    font-family: Arial, sans-serif; /* Change font as needed */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    padding-top: 50px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(359deg);
+    }
+}
+
+/* General styling for corner boxes */
+.About .corner-box {
+    position: absolute;
+    z-index: 1; /* Default z-index */
+    display: block;
+    width: 450px;
+    font-family: Arial, sans-serif; /* Change font as needed */
+    height: 200px;
+    background-color: #f9004d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid #ffffff; /* Add a white border */ 
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Set to 1 for full opacity */
+    overflow: hidden; /* Ensures the image does not extend outside the box */
+}
+About .corner-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); /* Center the image */
+
+    object-fit: cover; /* Use cover to make sure the image covers the box without stretching */
+    background-color: #100e0f;
+    object-fit: contain; /* Ensures the image fills the box while maintaining aspect ratio */
+    z-index: 0; /* Image is placed behind the overlay */
+    border-radius: 10px; /* Maintain rounded corners for the image */
+}
+
+.About .corner-box .overlay {
+    position: absolute;
+    bottom: 0; /* Align the text to the bottom */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for the text */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.About .corner-box:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Scale down and reduce opacity of other boxes when hovering over one */
+.About .corner-box:hover ~ .corner-box {
+    transform: scale(0.7);
+    opacity: 0.5;
+}
+
+.About .top-left {
+    top: 100px;
+    left: 100px;
+}
+
+.About .top-right {
+    top: 100px;
+    right: 100px;
+}
+
+.About .bottom-left {
+    bottom: 50px;
+    left: 100px;
+}
+
+.About .bottom-right {
+    bottom: 50px;
+    right: 100px;
+}
+
+.About img {
+    height: auto;
+    width: 100%;
+}
+
+.about-text {
+    width: 100%;
+    padding-top: 7px; /* padding value */
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+/* Header of about page */
+.about-text {
+    width: 100%;
+    padding-top: 7px; /* padding value */
+}
+.about-text h2 {
+    color: aliceblue;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 340px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.About .about-text span {
+    color: #f9004d;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+/* Institutes Section */
+#Institutes {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Stacks the title on top of the carousel */
+    align-items: center; /* Centers content horizontally */
+    width: 100%; /* You can adjust this as needed */
+}
+/* Typography and styling */
+.Institutes h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.Institutes h2 span {
+    color: #f9004d;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Carousel */
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-inner .card {
+    border-radius: 20px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    overflow: hidden;
+}
+
+.carousel-inner .card:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    z-index: 10;
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: #f9004d;
+}
+.card .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.card .button:hover {
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: .4s;
+}
+h5 {
+    color: #9e3b3b;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+@keyframes snake-border {
+    0% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+    25% {
+        border-color: transparent;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    50% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+    75% {
+        border-color: transparent;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    100% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+}
+/* General carousel styling */
+/* Enlarged carousel container */
+.carousel {
+    width: 900px; /* Adjusted width to 80% of the viewport */
+    height: 600px; /* Set height to 600px for a larger display */
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+    border-radius: 12px;
+    background-image: url("image.jpg"); /* Set background image */
+    background-size: cover; /* Ensure background covers the entire carousel */
+    transition: all 0.3s ease;
+    animation: snake-border 3s linear infinite; /* Animation for border */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Smooth easing */
+    width: 100%; /* 5 items, each taking full width of the container */
+}
+
+.map-container {
+    width: 500px; /* Increased width for map container */
+    margin-left: 10px; /* Consistent padding */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow of iframe */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.info-container {
+    width: 35%; /* Reduced width for info container */
+    padding: 20px; /* Consistent padding */
+    margin-left: -10px;
+    background-color: #ffffff; /* White background for info */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Slight shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+    height: 80%;
+    min-height: 480px;
+}
+.info-container h2{
+    color: #f9004d;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bolder;
+}
+.info-container p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+.info-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+#info-container {
+    width: 35%; /* Reduced width for info container */
+    padding: 20px; /* Consistent padding */
+    margin-left: -10px;
+    background-color: #ffffff; /* White background for info */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Slight shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+    height: 80%;
+    min-height: 540px;
+}
+#info-container h2{
+    color: #f9004d;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bolder;
+}
+#info-container p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+#info-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+iframe {
+    width: 100%; /* Full width of map container */
+    height: 450px; /* Increased map height */
+    border: none; /* No borders around iframe */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow around iframe */
+}
+
+.carousel-item {
+    display: flex;
+    min-width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 20px; /* Padding inside carousel items */
+    align-items: center; /* Center map and info container vertically */
+    justify-content: space-between; /* Evenly space map and info containers */
+    overflow: hidden; /* Prevent content from extending outside carousel */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292929;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-top: 20px;
+    
+    
+}
+
+.btn:hover {
+    background-color: #f9004d;
+    transition:  0.3s ease-in-out;
+    
+}
+
+/* Carousel control button styling */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #f9004d;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control:hover{
+    background-color: #f9004d;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+  
+  
+
+/* Card styles */
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #000000;
+    border-radius: 20px;
+    margin: 15px;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+}
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: #fcfcfc;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 22px 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 0px;
+    font-size: 14px;
+}
+
+.second-website {
+    padding: 0px; /* Adjust this value as needed */
+}
+/* Gene Section */
+#Gene {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+        }
+
+
+#Gene h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    max-width: 100%;
+}
+#Gene h1 span{
+    color: #f9004d;
+}
+#Gene ul span{
+    color: #eeeeee;
+}
+#Gene p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+#Gene ul {
+    font-size: 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: left; /* Align the list to the left */
+     /* Removes the default bullets */
+    padding: 0;
+    line-height: 1.6;
+}
+
+#Gene ul li {
+    margin-bottom: 10px;
+}
+
+/* Signs which is redirect2.html will start from here */
+.Signs {
+    width: 100%;
+    height: 650px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+        }
+
+
+.Signs h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+}
+#Signs h1 span{
+    color: #f9004d;
+}
+#Signs ul span{
+    color: #ffffff;
+}
+.Signs p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.Signs ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+     /* Removes the default bullets */
+    padding: 0;
+    line-height: 1.3;
+}
+
+.Signs ul li {
+    margin-bottom: 10px;
+}
+
+/* Cognitive which is redirect3.html will start from here */
+#Cognitive {
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+}
+#Cognitive h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+#Cognitive h1 span{
+    color: #f9004d;
+}
+#Cognitive  h3 span {
+    color: #ffffff;
+    margin-right: 2000px;
+}
+
+#Cognitive h3 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 28px;
+    margin-top: 10px;   
+    padding-top: 10px;
+}
+#Cognitive p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+#Cognitive ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+    margin-top: -10px; /* Reduce spacing between h3 and ul */
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
+}
+#Cognitive ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    margin-right: 250px;
+}
+/* Section for redirect4 which is Solutions */
+#Solution {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+}
+#Solution h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+#Solution h1 span{
+    color: #f9004d;
+}
+#Solution ul li span{
+    color: #ffffff;
+}
+#Solution p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+#Solution ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+    margin-top: -10px; /* Reduce spacing between h3 and ul */
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
+    line-height: 1.7;
+}
+#Solution ul li {
+    margin-bottom: 10px;
+}
+
+/* Style for the dropdown */
+/CHANGES FROM HERE/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('solvealt.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    z-index: 1000;
+    
+}
+/* this is navigation tab title */
+.title h2 {
+    font-size: 80;
+    text-align: right; /* Center the text */
+    margin: -10px 250px;
+}
+.logo {
+    background: none; /* No background */
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: #000000 12px -24px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f9004d;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: #000000 12px -24px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.logo:hover {
+    cursor:pointer; /* Force no underline on hover */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: color 0.4s;
+}
+
+#btn {
+    background-color: #f9004d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+#Home content {
+    line-height: 3;
+}
+
+#Home h1 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 25px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#Home h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#Home h4 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 40px;
+    font-weight: bold !important;
+    font-family: Arial, sans-serif;
+}
+#Home h4 span {
+    color: #f9004d;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+/* Newsletter */
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #eee;
+    outline: none;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px #f9004d, 0px 0px 15px #f9004d;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+.About .overlay span{
+    color: #f9004d;
+}
+.About {
+    position: relative;
+    background-color: #191919;
+    height: 100vh;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    padding-top: 50px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(359deg);
+    }
+}
+
+/* General styling for corner boxes */
+.About .corner-box {
+    position: absolute;
+    z-index: 1; /* Default z-index */
+    display: block;
+    width: 450px;
+    
+    height: 200px;
+    background-color: #f9004d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid #ffffff; /* Add a white border */ 
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Set to 1 for full opacity */
+    overflow: hidden; /* Ensures the image does not extend outside the box */
+}
+About .corner-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); /* Center the image */
+
+    object-fit: cover; /* Use cover to make sure the image covers the box without stretching */
+    background-color: #100e0f;
+    object-fit: contain; /* Ensures the image fills the box while maintaining aspect ratio */
+    z-index: 0; /* Image is placed behind the overlay */
+    border-radius: 10px; /* Maintain rounded corners for the image */
+}
+
+.About .corner-box .overlay {
+    position: absolute;
+    bottom: 0; /* Align the text to the bottom */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for the text */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.About .corner-box:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Scale down and reduce opacity of other boxes when hovering over one */
+.About .corner-box:hover ~ .corner-box {
+    transform: scale(0.7);
+    opacity: 0.5;
+}
+
+.About .top-left {
+    top: 100px;
+    left: 100px;
+}
+
+.About .top-right {
+    top: 100px;
+    right: 100px;
+}
+
+.About .bottom-left {
+    bottom: 50px;
+    left: 100px;
+}
+
+.About .bottom-right {
+    bottom: 50px;
+    right: 100px;
+}
+
+.About img {
+    height: auto;
+    width: 100%;
+}
+
+.about-text {
+    width: 100%;
+    padding-top: 7px; /* padding value */
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+/* Header of about page */
+.about-text {
+    width: 100%;
+    padding-top: 7px; /* padding value */
+}
+.about-text h2 {
+    color: aliceblue;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 340px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.About .about-text span {
+    color: #f9004d;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+/* Institutes Section */
+#Institutes {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Stacks the title on top of the carousel */
+    align-items: center; /* Centers content horizontally */
+    width: 100%; /* You can adjust this as needed */
+}
+/* Typography and styling */
+.Institutes h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.Institutes h2 span {
+    color: #f9004d;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Carousel */
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-inner .card {
+    border-radius: 20px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    overflow: hidden;
+}
+
+.carousel-inner .card:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    z-index: 10;
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: #f9004d;
+}
+.card .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.card .button:hover {
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: .4s;
+}
+h5 {
+    color: #9e3b3b;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+@keyframes snake-border {
+    0% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+    25% {
+        border-color: transparent;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    50% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+    75% {
+        border-color: transparent;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    100% {
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+}
+/* General carousel styling */
+/* Enlarged carousel container */
+.carousel {
+    width: 900px; /* Adjusted width to 80% of the viewport */
+    height: 600px; /* Set height to 600px for a larger display */
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+    border-radius: 12px;
+    background-image: url("image.jpg"); /* Set background image */
+    background-size: cover; /* Ensure background covers the entire carousel */
+    transition: all 0.3s ease;
+    animation: snake-border 3s linear infinite; /* Animation for border */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Smooth easing */
+    width: 100%; /* 5 items, each taking full width of the container */
+}
+
+.map-container {
+    width: 500px; /* Increased width for map container */
+    margin-left: 10px; /* Consistent padding */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow of iframe */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.info-container {
+    width: 35%; /* Reduced width for info container */
+    padding: 20px; /* Consistent padding */
+    margin-left: -10px;
+    background-color: #ffffff; /* White background for info */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Slight shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+    height: 80%;
+    min-height: 480px;
+}
+.info-container h2{
+    color: #f9004d;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bolder;
+}
+.info-container p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+.info-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+#info-container {
+    width: 35%; /* Reduced width for info container */
+    padding: 20px; /* Consistent padding */
+    margin-left: -10px;
+    background-color: #ffffff; /* White background for info */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Slight shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+    height: 80%;
+    min-height: 565px;
+}
+#info-container h2{
+    color: #f9004d;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bolder;
+}
+#info-container p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+#info-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+#info-container1 {
+    width: 35%; /* Reduced width for info container */
+    padding: 20px; /* Consistent padding */
+    margin-left: -10px;
+    background-color: #ffffff; /* White background for info */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Slight shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: all 0.3s ease;
+    height: 80%;
+    min-height: 550px;
+}
+#info-container1 h2{
+    color: #f9004d;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bolder;
+}
+#info-container1 p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+#info-container1:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+iframe {
+    width: 100%; /* Full width of map container */
+    height: 450px; /* Increased map height */
+    border: none; /* No borders around iframe */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow around iframe */
+}
+
+.carousel-item {
+    display: flex;
+    min-width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 20px; /* Padding inside carousel items */
+    align-items: center; /* Center map and info container vertically */
+    justify-content: space-between; /* Evenly space map and info containers */
+    overflow: hidden; /* Prevent content from extending outside carousel */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292929;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-top: 20px;
+    
+    
+}
+
+.btn:hover {
+    background-color: #f9004d;
+    transition:  0.3s ease-in-out;
+    
+}
+
+/* Carousel control button styling */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #f9004d;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control:hover{
+    background-color: #f9004d;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+  
+  
+
+/* Card styles */
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #000000;
+    border-radius: 20px;
+    margin: 15px;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+}
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: #fcfcfc;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 22px 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 0px;
+    font-size: 14px;
+}
+
+.second-website {
+    padding: 0px; /* Adjust this value as needed */
+}
+/* Gene Section */
+#Gene {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+        }
+
+
+#Gene h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    max-width: 100%;
+}
+#Gene h1 span{
+    color: #f9004d;
+}
+#Gene ul span{
+    color: #eeeeee;
+}
+#Gene p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+#Gene ul {
+    font-size: 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: left; /* Align the list to the left */
+     /* Removes the default bullets */
+    padding: 0;
+    line-height: 1.6;
+}
+
+#Gene ul li {
+    margin-bottom: 10px;
+}
+
+/* Signs which is redirect2.html will start from here */
+.Signs {
+    width: 100%;
+    height: 650px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+        }
+
+
+.Signs h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+}
+#Signs h1 span{
+    color: #f9004d;
+}
+#Signs ul span{
+    color: #ffffff;
+}
+.Signs p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.Signs ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+     /* Removes the default bullets */
+    padding: 0;
+    line-height: 1.3;
+}
+
+.Signs ul li {
+    margin-bottom: 10px;
+}
+
+/* Cognitive which is redirect3.html will start from here */
+#Cognitive {
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+}
+#Cognitive h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+#Cognitive h1 span{
+    color: #f9004d;
+}
+#Cognitive  h3 span {
+    color: #ffffff;
+    margin-right: 2000px;
+}
+
+#Cognitive h3 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 28px;
+    margin-top: 10px;   
+    padding-top: 10px;
+}
+#Cognitive p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+#Cognitive ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+    margin-top: -10px; /* Reduce spacing between h3 and ul */
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
+}
+#Cognitive ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    margin-right: 250px;
+}
+/* Section for redirect4 which is Solutions */
+#Solution {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-color: #191919; /* Background color for the Gene section */
+    color: #f9004d; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Apply the font to your body */
+}
+#Solution h1 { /* Update h2 to h1 to match the element in HTML */
+    font-size: 36px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+#Solution h1 span{
+    color: #f9004d;
+}
+#Solution ul li span{
+    color: #ffffff;
+}
+#Solution p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+#Solution ul {
+    font-size: 20px;
+    max-width: 900px;
+    text-align: left; /* Align the list to the left */
+    margin-top: -10px; /* Reduce spacing between h3 and ul */
+    padding-left: 0; /* Remove extra left padding */
+    padding-right: 0;
+    line-height: 1.7;
+}
+#Solution ul li {
+    margin-bottom: 10px;
+}
+
+/* Style for the dropdown */
+/*CHANGES FROM HERE*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: inherit; /* Use the same background as the navigation */
+    color: inherit; /* Use the same text color as other nav links */
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f9f9f9; /* Dropdown background color */
+    min-width: 160px; /* Width of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Add shadow */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black; /* Dropdown text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovered */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555; /* Change button color on hover */
+}
+
+/* Style for the nested dropdown container */
+.nested-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nested dropdown content (initially hidden) */
+.nested-dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 100%; /* Position it to the right of the parent dropdown */
+    top: 0;
+    background-color: #f9f9f9; /* Background of the nested dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Nested dropdown links */
+.nested-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nested-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the nested dropdown when hovering over the parent dropdown item */
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+}
+/*TILL HERE*/
+
+/* Add some space between the text and arrow */
+.dropbtn i, .nested-dropdown a i {
+    margin-left: 8px; /* Adds space between text and arrow */
+}
+
+/* Align the down arrow for the main dropdown */
+.dropdown .dropbtn i {
+    vertical-align: middle;
+}
+
+/* Align the right arrow for the nested dropdown */
+.nested-dropdown a i {
+    vertical-align: middle;
+}
+
+/* Add transition for smooth hover effect on dropdown items */
+.dropdown a:hover i, .nested-dropdown a:hover i {
+    transform: rotate(90deg); /* Rotate the arrow on hover */
+    transition: 0.3s ease;
+}
+/*TILL HERE*/
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+#location-output {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.icon {
+    color: #000000; /* Change to your preferred color */
+    margin-right: 5px; /* Space between the icon and text */
+}
+
+.icon:hover {
+    color: #000000; /* Change color on hover */
+}
+
+.contact-info {
+    font-family: Arial, sans-serif; /* Change font as needed */
+    color: #ff0000; /* Red color for text */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    background-color: #f9f9f9; /* Light background for contrast */
+    max-width: 400px; /* Limit width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto; /* Centered in the container */
+    overflow-wrap: break-word;
+}
+
+.contact-info h3 {
+    margin: 0; /* No margin for headings */
+    font-size: 24px; /* Larger font for title */
+    text-align: center; /* Center the heading */
+    color: #c00; /* Slightly darker red for the heading */
+}
+
+.contact-info p {
+    margin: 10px 0; /* Spacing between lines */
+    font-size: 16px; /* Adjust font size */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.contact-info p:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
+    border-radius: 5px; /* Keep rounded corners on hover */
+}
+
+.contact-info a {
+    text-decoration: none; /* Remove underline */
+    color: #ff0000; /* Red color for links */
+    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transitions */
+    margin-left: 8px; /* Space between icon and link */
+    word-break: break-all;
+}
+
+.contact-info a:hover {
+    color: #cc0000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.icon {
+    margin-right: 10px; /* Space between icon and text */
+    color: #ff0000; /* Red color for icons */
+    font-size: 20px; /* Larger icons */
+    flex-shrink: 0; /* Prevent icons from shrinking */
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.contact-info p:hover .icon {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+.ent{
+        width: 300px; 
+        height: 100px; 
+    
+}
+/TILL HERE/
+
+/* Add some space between the text and arrow */
+.dropbtn i, .nested-dropdown a i {
+    margin-left: 8px; /* Adds space between text and arrow */
+}
+
+/* Align the down arrow for the main dropdown */
+.dropdown .dropbtn i {
+    vertical-align: middle;
+}
+
+/* Align the right arrow for the nested dropdown */
+.nested-dropdown a i {
+    vertical-align: middle;
+}
+
+/* Add transition for smooth hover effect on dropdown items */
+.dropdown a:hover i, .nested-dropdown a:hover i {
+    transform: rotate(90deg); /* Rotate the arrow on hover */
+    transition: 0.3s ease;
+}
+/TILL HERE/
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+#location-output {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.icon {
+    color: #000000; /* Change to your preferred color */
+    margin-right: 5px; /* Space between the icon and text */
+}
+
+.icon:hover {
+    color: #000000; /* Change color on hover */
+}
+
+.contact-info {
+    font-family: Arial, sans-serif; /* Change font as needed */
+    color: #ff0000; /* Red color for text */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    background-color: #f9f9f9; /* Light background for contrast */
+    max-width: 400px; /* Limit width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto; /* Centered in the container */
+    overflow-wrap: break-word;
+}
+
+.contact-info h3 {
+    margin: 0; /* No margin for headings */
+    font-size: 24px; /* Larger font for title */
+    text-align: center; /* Center the heading */
+    color: #c00; /* Slightly darker red for the heading */
+}
+
+.contact-info p {
+    margin: 10px 0; /* Spacing between lines */
+    font-size: 16px; /* Adjust font size */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.contact-info p:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
+    border-radius: 5px; /* Keep rounded corners on hover */
+}
+
+.contact-info a {
+    text-decoration: none; /* Remove underline */
+    color: #ff0000; /* Red color for links */
+    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transitions */
+    margin-left: 8px; /* Space between icon and link */
+    word-break: break-all;
+}
+
+.contact-info a:hover {
+    color: #cc0000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.icon {
+    margin-right: 10px; /* Space between icon and text */
+    color: #ff0000; /* Red color for icons */
+    font-size: 20px; /* Larger icons */
+    flex-shrink: 0; /* Prevent icons from shrinking */
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.contact-info p:hover .icon {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
